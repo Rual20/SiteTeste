@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Top-Fit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h1>FIT</h1>
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="sobre.html">SOBRE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <form id="formSearch">
+                    <input type="search" placeholder="PESQUISAR RECEITA" name="inputSearch"
+                        id="inputSearch">
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Receitas</h3>
+            <section class="receitas">
+                <article class="receita">
+                    <img src="img/1.PNG" alt="Receita 01" width="300" height="300">
+                    <h4>Bolo de abóbora com coco fit</h4>
+                    <h4>R$ 10,00</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum delectus nisi eligendi enim iste!</p>
+                    <button type="button" onclick="modalTrigger()">Comprar</button>
+                </article>
+                <article class="receita">
+                    <img src="img/2.PNG" alt="Receita 02"width="300" height="300">
+                    <h4>Tilápia assada com amêndoas e ervas</h4>
+                    <h4>R$ 15,00</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum delectus nisi eligendi enim iste!</p>
+                    <button type="button" onclick="modalTrigger()">Comprar</button>
+                </article>
+                <article class="receita">
+                    <img src="img/3.PNG" alt="Receita 03"width="300" height="300">
+                    <h4>Charutinhos de repolho</h4>
+                    <h4>R$ 20,00</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum delectus nisi eligendi enim iste!</p>
+                    <button type="button" onclick="modalTrigger()">Comprar</button>
+                </article>
+                <article class="receita">
+                    <img src="img/4.PNG" alt="Receita 04"width="300" height="300">
+                    <h4>Pão de abóbora low carb</h4>
+                    <h4>R$ 25,00</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum delectus nisi eligendi enim iste!</p>
+                    <button type="button" onclick="modalTrigger()">Comprar</button>
+                </article>
+                <article class="receita">
+                    <img src="img/5.PNG" alt="Receita 05"width="300" height="300">
+                    <h4>Hambúrguer de quinoa</h4>
+                    <h4>R$ 30,00</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum delectus nisi eligendi enim iste!</p>
+                    <button type="button" onclick="modalTrigger()">Comprar</button>
+                </article>
+            </section>
+        </div>
+
+        <div class="modal hide">
+            <form class="modal-form" id="form-product">
+                <div class="form-group">
+                    <label for="title">Prato</label>
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Nome da Receita" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantidade</label>
+                    <input type="number" name="quantity" id="quantity" class="form-control" placeholder="EX.1"required="required" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="EX. Raul Vitor"required="required">
+                </div>
+                <div class="form-group">
+                    <label for="address">Endereço</label>
+                    <input type="text" name="address" id="address" class="form-control" placeholder="EX. Rua 123"required="required">
+                </div>
+                <div class="form-group">
+                    <label for="payment">Pagamento</label>
+                    <select name="payment" id="payment" class="form-control" required="required">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartao">Cartão Crédito/Débito</option>
+                        <option value="pix">Pix</option>
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-success">Finalizar Pedido</button>
+                    <button type="button" class="btn btn-danger" onclick="modalTrigger()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Raul</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
